@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,6 +18,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+
+        // If this scene's self.window is nil then set a new UIWindow object to it.
+         self.window = self.window ?? UIWindow()
+
+        let onBoardingStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let onBoardingViewController = onBoardingStoryboard.instantiateViewController(identifier: "onboarding") as! OnboardingViewController
+              //onBoardingViewController.modalPresentationStyle = .fullScreen
+
+         self.window!.rootViewController = onBoardingViewController
+         self.window!.makeKeyAndVisible()
+
+        if Auth.auth().currentUser != nil {
+            let rootStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let rootViewController = rootStoryboard.instantiateInitialViewController() as! ViewController
+            rootViewController.modalPresentationStyle = .fullScreen
+            window?.rootViewController?.present(rootViewController, animated: false) {
+                onBoardingViewController.view.isHidden = false
+            }
+        } else {
+            onBoardingViewController.view.isHidden = false
+        }
+
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

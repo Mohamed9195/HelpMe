@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need an access your photo library to help you choose your baby photo</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need an access your camera to help you choose your baby photo</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>We need the Bluetooth to help us increase GPS quality</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>We need the Bluetooth to help us increase GPS quality</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need this to find and help you to find places.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need this to find and help you to find places.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need this to find and help you to find places.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -39,6 +53,12 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>bluetooth-peripheral</string>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -47,11 +67,11 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

@@ -8,14 +8,48 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
+import Firebase
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Keyboard Handling
+        IQKeyboardManager.shared.enable = false
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 30
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        
+        //Firebase Configuration
+        FirebaseApp.configure()
+
+        //        //when start app
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        let onBoardingStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let onBoardingViewController = onBoardingStoryboard.instantiateViewController(identifier: "onboarding") as! OnboardingViewController
+        //onBoardingViewController.modalPresentationStyle = .fullScreen
+
+        self.window!.rootViewController = onBoardingViewController
+        self.window!.makeKeyAndVisible()
+
+        if Auth.auth().currentUser != nil {
+            let rootStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let rootViewController = rootStoryboard.instantiateInitialViewController() as! ViewController
+            rootViewController.modalPresentationStyle = .fullScreen
+            window?.rootViewController?.present(rootViewController, animated: false) {
+                onBoardingViewController.view.isHidden = false
+            }
+        } else {
+            onBoardingViewController.view.isHidden = false
+        }
+        
         return true
     }
 
