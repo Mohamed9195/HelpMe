@@ -49,6 +49,7 @@ class SignUpViewController: UIViewController, SignUpViewModelProtocol {
         UIHelper.hideProgressView()
         let alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 
     func dataSavedError(error: Error) {

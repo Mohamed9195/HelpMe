@@ -25,7 +25,7 @@ class LogInRouter: LoginRouterInput {
 
     func navigateToHome() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let MainViewController = storyboard.instantiateInitialViewController() as! ViewController
+        let MainViewController = storyboard.instantiateViewController(identifier: "first")
         MainViewController.modalPresentationStyle = .fullScreen
         viewController.navigationController?.pushViewController(MainViewController, animated: true)
     }

@@ -8,9 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		66C87580BE393B3BFE3C8B2D /* Pods_HelpMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9050A2314BB3824EBA957AA7 /* Pods_HelpMeTests.framework */; };
+		7D19F7A52432F7AD00BAA857 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19F7A42432F7AD00BAA857 /* MainViewController.swift */; };
+		7D19F7A72435F98F00BAA857 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19F7A62435F98F00BAA857 /* MainViewModel.swift */; };
+		7D19F7A92435F9BF00BAA857 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19F7A82435F9BF00BAA857 /* Model.swift */; };
+		7D19F7AB2435F9D700BAA857 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19F7AA2435F9D700BAA857 /* MainTableViewCell.swift */; };
 		7D31CF4A241C4E76005F7DD0 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31CF49241C4E76005F7DD0 /* GenderViewController.swift */; };
 		7D31CF4C241C4E90005F7DD0 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31CF4B241C4E90005F7DD0 /* NameViewController.swift */; };
 		7D31CF4E241C7277005F7DD0 /* AuthenticationFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31CF4D241C7277005F7DD0 /* AuthenticationFirebase.swift */; };
+		7D31CF50242150EE005F7DD0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31CF4F242150EE005F7DD0 /* SettingViewController.swift */; };
+		7D31CF522421511A005F7DD0 /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31CF512421511A005F7DD0 /* EmailTableViewCell.swift */; };
+		7D31CF5424215128005F7DD0 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31CF5324215128005F7DD0 /* SettingTableViewCell.swift */; };
+		7D31CF562421514B005F7DD0 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31CF552421514B005F7DD0 /* SettingViewModel.swift */; };
 		7D36083023F3F70A00544022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D36082F23F3F70A00544022 /* AppDelegate.swift */; };
 		7D36083223F3F70A00544022 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D36083123F3F70A00544022 /* SceneDelegate.swift */; };
 		7D36083423F3F70A00544022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D36083323F3F70A00544022 /* ViewController.swift */; };
@@ -61,9 +69,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D19F7A42432F7AD00BAA857 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7D19F7A62435F98F00BAA857 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7D19F7A82435F9BF00BAA857 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7D19F7AA2435F9D700BAA857 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		7D31CF49241C4E76005F7DD0 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
 		7D31CF4B241C4E90005F7DD0 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		7D31CF4D241C7277005F7DD0 /* AuthenticationFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebase.swift; sourceTree = "<group>"; };
+		7D31CF4F242150EE005F7DD0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		7D31CF512421511A005F7DD0 /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
+		7D31CF5324215128005F7DD0 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		7D31CF552421514B005F7DD0 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		7D36082C23F3F70A00544022 /* HelpMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D36082F23F3F70A00544022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D36083123F3F70A00544022 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -271,6 +287,10 @@
 		7D36086123F3F8EE00544022 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				7D31CF4F242150EE005F7DD0 /* SettingViewController.swift */,
+				7D31CF512421511A005F7DD0 /* EmailTableViewCell.swift */,
+				7D31CF5324215128005F7DD0 /* SettingTableViewCell.swift */,
+				7D31CF552421514B005F7DD0 /* SettingViewModel.swift */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -278,6 +298,10 @@
 		7D36086223F3F8F100544022 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7D19F7A42432F7AD00BAA857 /* MainViewController.swift */,
+				7D19F7A62435F98F00BAA857 /* MainViewModel.swift */,
+				7D19F7A82435F9BF00BAA857 /* Model.swift */,
+				7D19F7AA2435F9D700BAA857 /* MainTableViewCell.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -544,29 +568,37 @@
 				7DDC2A2A23FE9B08004FD640 /* LocationServiceManager.swift in Sources */,
 				7DDC2A3723FED078004FD640 /* InternetConnection.swift in Sources */,
 				7D37C40523F565660093DEB5 /* OnboardingViewController.swift in Sources */,
+				7D19F7A92435F9BF00BAA857 /* Model.swift in Sources */,
 				7D37C3F023F5605E0093DEB5 /* LogInWorker.swift in Sources */,
+				7D31CF562421514B005F7DD0 /* SettingViewModel.swift in Sources */,
 				7D37C3F423F5605E0093DEB5 /* LogInInteractor.swift in Sources */,
 				7D31CF4C241C4E90005F7DD0 /* NameViewController.swift in Sources */,
 				7D37C3F123F5605E0093DEB5 /* LogInRouter.swift in Sources */,
 				7DDC2A2423FE9350004FD640 /* Constatnt.swift in Sources */,
 				7DDC2A2E23FE9B1D004FD640 /* PushNotificationServiceManger.swift in Sources */,
+				7D19F7A72435F98F00BAA857 /* MainViewModel.swift in Sources */,
 				7D36083023F3F70A00544022 /* AppDelegate.swift in Sources */,
 				7D37C3EF23F5605E0093DEB5 /* LogInPresenter.swift in Sources */,
 				7DDC2A2C23FE9B10004FD640 /* BluetoothServiceManger.swift in Sources */,
 				7D37C3F323F5605E0093DEB5 /* LogInViewController.swift in Sources */,
+				7D31CF5424215128005F7DD0 /* SettingTableViewCell.swift in Sources */,
 				7DDC2A2623FE93BF004FD640 /* MainModel.swift in Sources */,
 				7D37C40723F5970D0093DEB5 /* UIView+Animation.swift in Sources */,
 				7D37C3FF23F560770093DEB5 /* SignUpViewController.swift in Sources */,
+				7D19F7A52432F7AD00BAA857 /* MainViewController.swift in Sources */,
 				7D36083A23F3F70A00544022 /* HelpMe.xcdatamodeld in Sources */,
 				7DDC2A3B23FED083004FD640 /* NoInternetConnectionMessageView.swift in Sources */,
 				7D37C3F223F5605E0093DEB5 /* LogInModels.swift in Sources */,
 				7D31CF4A241C4E76005F7DD0 /* GenderViewController.swift in Sources */,
+				7D31CF50242150EE005F7DD0 /* SettingViewController.swift in Sources */,
 				7D37C40B23F59BCC0093DEB5 /* Theme.swift in Sources */,
 				7D31CF4E241C7277005F7DD0 /* AuthenticationFirebase.swift in Sources */,
 				7D36083223F3F70A00544022 /* SceneDelegate.swift in Sources */,
 				7DDC2A2823FE9AFC004FD640 /* ServiceStatusManager.swift in Sources */,
 				7D37C3FE23F560770093DEB5 /* SignUpModels.swift in Sources */,
+				7D19F7AB2435F9D700BAA857 /* MainTableViewCell.swift in Sources */,
 				7DDC2A2223FE6AB2004FD640 /* LoginConfiguration.swift in Sources */,
+				7D31CF522421511A005F7DD0 /* EmailTableViewCell.swift in Sources */,
 				7DDC2A3123FEA0A4004FD640 /* UIHelper.swift in Sources */,
 				7DDC2A3523FECE02004FD640 /* KeyboardEvent.swift in Sources */,
 				7D6E88BB2406708C00E53EE7 /* UIViewControllers+Extensions.swift in Sources */,

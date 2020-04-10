@@ -31,9 +31,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         if Auth.auth().currentUser != nil {
             let rootStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let rootViewController = rootStoryboard.instantiateInitialViewController() as! ViewController
-            rootViewController.modalPresentationStyle = .fullScreen
-            window?.rootViewController?.present(rootViewController, animated: false) {
+            let rootViewController = rootStoryboard.instantiateInitialViewController()
+            rootViewController?.modalPresentationStyle = .fullScreen
+            window?.rootViewController?.present(rootViewController!, animated: false) {
                 onBoardingViewController.view.isHidden = false
             }
         } else {

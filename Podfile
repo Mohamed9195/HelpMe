@@ -19,6 +19,7 @@ target 'HelpMe' do
     pod 'Firebase/Database'
     pod 'R.swift' , '~> 5.1'
     pod 'RxFeedback', '~> 3.0'
+    pod 'FaveButton'
 
   # Pods for HelpMe
 

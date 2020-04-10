@@ -30,8 +30,10 @@ class SignUpViewModel {
             } else {
                 let firebaseRealDataBase = Database.database().reference()
                 let authPath = "UserNumber \(Int.random(in: 0...10000))"
+                UserDefaults.standard.set(authPath, forKey: "userID")
+                UserDefaults.standard.synchronize()
                 let dataToFirebaseDatabase = self.setUserJson(email: email, password: password)
-                firebaseRealDataBase.child("users/data/\(authPath)").childByAutoId().setValue(dataToFirebaseDatabase) { (error, reference) in
+                firebaseRealDataBase.child("users/data/\(authPath)").setValue(dataToFirebaseDatabase) { (error, reference) in
                     if let error = error {
                         self.delegate?.dataSavedError(error: error)
                     } else {
